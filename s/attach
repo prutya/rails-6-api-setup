@@ -1,0 +1,12 @@
+#!/bin/bash
+set -eo pipefail
+
+s/check-docker
+
+CONTAINER_ID=$(docker ps --quiet --filter "label=rails-6-api.service=$1")
+
+docker exec \
+  --interactive \
+  --tty \
+  "$CONTAINER_ID" \
+  zsh

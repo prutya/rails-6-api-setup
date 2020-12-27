@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eo pipefail
+
+s/check-docker
+
+docker-compose down --timeout 1

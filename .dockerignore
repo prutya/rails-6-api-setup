@@ -1,0 +1,7 @@
+/s
+.dockerignore
+.DS_Store
+.env*
+.gitignore
+docker-compose*
+Dockerfile*

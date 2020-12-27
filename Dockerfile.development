@@ -1,0 +1,13 @@
+FROM ruby:2.7.2-alpine3.12
+
+RUN apk add --update --no-cache --no-progress \
+  zsh
+
+RUN apk add --update --no-cache --no-progress \
+  alpine-sdk \
+  postgresql-dev \
+  libxml2 \
+  libxslt \
+  tzdata
+
+WORKDIR /rails-6-api
